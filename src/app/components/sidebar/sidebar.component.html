@@ -1,0 +1,15 @@
+<div class="mainContainer">
+  <div class="wrapper">
+    <a href="">
+      <img src="../../../assets/images/logo.svg" alt="logo" />
+    </a>
+    <ul>
+      <li *ngFor="let item of navigationList">
+        <a href="">
+          <img [src]="item.src" [alt]="item.text" />
+          <span>{{ item.text }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
